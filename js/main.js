@@ -3,9 +3,21 @@
 
 
 function clicou() {
-    document.getElementById("agradecimento").innerHTML = "<b>Vai pá ondi?</b>";
+    document.getElementById("agradecimento").innerHTML = "<b>Clique no texto!</b>";
 }
 
+function redi() {
+    //window.open("http://192.168.1.12/#temp");
+    window.location.href = "http://192.168.1.12/#temp";
+}
+
+function troca() {
+    document.getElementById("mouseAction").innerHTML = "Obrigado!"
+}
+
+function volta() {
+    document.getElementById("mouseAction").innerHTML = "Passe o mouse aqui!"
+}
 
 
 
