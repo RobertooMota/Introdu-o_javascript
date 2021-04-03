@@ -6,13 +6,22 @@
         <script type="text/javascript" src="js/main.js"></script>
         <title>Minha página</title>
     </head>
-<body>
+    <body onload="loadComplete()">
+        
+        <button class="botao" type="button" onclick="clicou()">Clique aqui!</button>
+        <p id="agradecimento" onclick="redi()"> </p>
+        <p onmouseover="troca(this)" onmouseout="volta(this)">Passe o mouse aqui!</p>
+        <p onmouseover="troca(this)" onmouseout="volta(this)">Passe o mouse aqui!</p>
+        
+        <select onchange="funcaoChange(this)">
 
-    <button class="botao" type="button" onclick="clicou()">Clique aqui!</button>
-    <p id="agradecimento" onclick="redi()"> </p>
-    <p id="mouseAction" onmouseover="troca()" onmouseout="volta()">Passe o mouse aqui!</p>
-    
-    
-
-</body>
+            <option value="one">1</option>
+            <option value="two">2</option>
+            <option value="three">3</option>
+            
+        </select>
+        
+        
+        
+    </body>
 </Html>

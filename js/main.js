@@ -11,12 +11,24 @@ function redi() {
     window.location.href = "http://192.168.1.12/#temp";
 }
 
-function troca() {
-    document.getElementById("mouseAction").innerHTML = "Obrigado!"
+function troca(elemento) {
+    //document.getElementById("mouseAction").innerHTML = "Obrigado!"
+    elemento.innerHTML = "Obrigado";
 }
 
-function volta() {
-    document.getElementById("mouseAction").innerHTML = "Passe o mouse aqui!"
+function volta(elemento) {
+    //document.getElementById("mouseAction").innerHTML = "Passe o mouse aqui!"
+    elemento.innerHTML = "Passe o Mouse Aqui!"
+
+}
+
+function loadComplete() {
+    alert("Carregada!");
+}
+
+function funcaoChange(elemento) {
+    var valor = elemento.value;
+    alert(valor);
 }
 
 
